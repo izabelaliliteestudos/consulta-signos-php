@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Estética Gótico-Chic & Elegante
+   ========================================================================== */
+
+body {
+    background: radial-gradient(circle at center, #161420 0%, #09080d 100%);
+    color: #e2e2e8;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cartão com Efeito de Vidro Obscuro */
+.card {
+    background-color: rgba(51, 33, 132, 0.88) !important;
+    border: 1px solid rgba(197, 160, 89, 0.35) !important;
+    border-radius: 16px !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 20px rgba(197, 160, 89, 0.1);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    border-color: rgba(197, 160, 89, 0.6) !important;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(197, 160, 89, 0.18);
+}
+
+/* Tipografia e Títulos */
+h1, h2, h3, .card-title {
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: 2px;
+    color: #c5a059 !important;
+    text-shadow: 0 0 12px rgba(197, 160, 89, 0.25);
+    text-transform: uppercase;
+}
+
+/* Rótulos e Campos de Entrada */
+.form-label {
+    color: #b0a8ba;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    background-color: rgba(10, 9, 14, 0.8) !important;
+    border: 1px solid rgba(197, 160, 89, 0.25) !important;
+    color: #f0eaf8 !important;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control:focus {
+    background-color: rgba(15, 13, 22, 0.95) !important;
+    border-color: #c5a059 !important;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.3) !important;
+    color: #ffffff !important;
+}
+
+/* Ícone do Seletor de Data (Calendário Dark) */
+::-webkit-calendar-picker-indicator {
+    filter: invert(0.8) sepia(0.5) saturate(3) hue-rotate(5deg);
+    cursor: pointer;
+}
+
+/* Botões Personalizados */
+.btn-primary {
+    background: linear-gradient(135deg, #2a2238 0%, #171222 100%) !important;
+    border: 1px solid #c5a059 !important;
+    color: #c5a059 !important;
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #3d3152 0%, #221a33 100%) !important;
+    color: #fff8e7 !important;
+    box-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+    border-color: rgba(197, 160, 89, 0.5) !important;
+    color: #c5a059 !important;
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.btn-outline-primary:hover {
+    background-color: rgba(131, 154, 221, 0.15) !important;
+    border-color: #c5a059 !important;
+    color: #f5e6c8 !important;
+}
+
+/* Texto de Descrição do Resultado */
+.lead {
+    color: #d1c9db !important;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 1.05rem;
+} 
